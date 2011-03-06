@@ -1,5 +1,5 @@
 %define upstream_name    XML-TreeBuilder
-%define upstream_version 3.09
+%define upstream_version 4.0
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
