@@ -1,15 +1,15 @@
 %define upstream_name    XML-TreeBuilder
-%define upstream_version 4.0
+%define upstream_version 4.3
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 
 Summary:	Build a tree of XML::Element objects
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/XML/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/XML/XML-TreeBuilder-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(HTML::Element)
@@ -58,3 +58,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Mon Jun 14 2010 cpan2dist 3.09-1mdv
 - initial mdv release, generated with cpan2dist
+
