@@ -1,4 +1,5 @@
 removed_sources:
   XML-TreeBuilder-4.0.tar.gz: ba7b1c9d43c57a965c9f81e220d5032e8d363c4f
-sources:
   XML-TreeBuilder-4.3.tar.gz: 30aec5211bf025581067a810f3defbc0c5e82531
+sources:
+  XML-TreeBuilder-5.2.tar.gz: 5bd4700aa0e1d94d74eaf36f9e52dae10ec2a5b2
