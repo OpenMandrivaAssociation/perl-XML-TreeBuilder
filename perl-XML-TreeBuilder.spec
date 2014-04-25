@@ -13,6 +13,7 @@ Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/XML/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
+BuildRequires: perl(XML::Catalog)
 BuildRequires:	perl(HTML::Element)
 BuildRequires:	perl(HTML::Tagset)
 BuildRequires:	perl(XML::Parser)
