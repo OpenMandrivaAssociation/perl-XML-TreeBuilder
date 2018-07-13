@@ -11,6 +11,8 @@ Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/XML/XML-TreeBuilder-%{upstream_version}.tar.gz
 
+BuildRequires:	perl(Test::More)
+BuildRequires:	perl(Test)
 BuildRequires:	perl-devel
 BuildRequires:	perl(HTML::Element)
 BuildRequires:	perl(HTML::Tagset)
