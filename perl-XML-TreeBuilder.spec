@@ -1,8 +1,8 @@
 %define upstream_name    XML-TreeBuilder
-%define upstream_version 4.3
+%define upstream_version 5.4
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
+Version:	5.4
 Release:	1
 
 Summary:	Build a tree of XML::Element objects
@@ -27,11 +27,11 @@ lowercase, as they are in HTML::Element.
 the HTML::Element manpage describes everything you can do with this class.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%autosetup -n %{upstream_name}-%{upstream_version}
+%__perl Makefile.PL INSTALLDIRS=vendor OPTIMIZE="%{optflags}" --skipdeps </dev/null
 
 %build
-perl Makefile.PL INSTALLDIRS=vendor
-%make
+%make_build
 
 %check
 %make test
