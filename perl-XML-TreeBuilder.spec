@@ -16,6 +16,7 @@ BuildRequires:	perl-devel
 BuildRequires:	perl(HTML::Element)
 BuildRequires:	perl(HTML::Tagset)
 BuildRequires:	perl(XML::Parser)
+BuildRequires:	perl(XML::Catalog)
 BuildArch:	noarch
 
 %description
@@ -26,14 +27,14 @@ lowercase, as they are in HTML::Element.
 the HTML::Element manpage describes everything you can do with this class.
 
 %prep
-%autosetup -n %{modname}-%{version}
+%autosetup -p1 -n %{modname}-%{version}
 %__perl Makefile.PL INSTALLDIRS=vendor OPTIMIZE="%{optflags}" --skipdeps </dev/null
 
 %build
 %make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc META.yml Changes README
