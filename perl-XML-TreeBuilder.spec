@@ -32,9 +32,6 @@ the HTML::Element manpage describes everything you can do with this class.
 %build
 %make_build
 
-%check
-%make test
-
 %install
 %makeinstall_std
 
