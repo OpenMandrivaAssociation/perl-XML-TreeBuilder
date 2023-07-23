@@ -1,15 +1,14 @@
-%define upstream_name    XML-TreeBuilder
-%define upstream_version 5.4
+%define	modname    XML-TreeBuilder
 
-Name:		perl-%{upstream_name}
+Name:		perl-%{modname}
 Version:	5.4
 Release:	1
 
 Summary:	Build a tree of XML::Element objects
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/XML/XML-TreeBuilder-%{upstream_version}.tar.gz
+Url:		http://search.cpan.org/dist/%{modname}
+Source0:	http://www.cpan.org/modules/by-module/XML/XML-TreeBuilder-%{version}.tar.gz
 
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl(Test)
@@ -27,7 +26,7 @@ lowercase, as they are in HTML::Element.
 the HTML::Element manpage describes everything you can do with this class.
 
 %prep
-%autosetup -n %{upstream_name}-%{upstream_version}
+%autosetup -n %{modname}-%{version}
 %__perl Makefile.PL INSTALLDIRS=vendor OPTIMIZE="%{optflags}" --skipdeps </dev/null
 
 %build
