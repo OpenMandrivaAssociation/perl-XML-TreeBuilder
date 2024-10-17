@@ -7,7 +7,7 @@ Release:	1
 Summary:	Build a tree of XML::Element objects
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{modname}
+Url:		https://search.cpan.org/dist/%{modname}
 Source0:	http://www.cpan.org/modules/by-module/XML/XML-TreeBuilder-%{version}.tar.gz
 
 BuildRequires:	perl(Test::More)
