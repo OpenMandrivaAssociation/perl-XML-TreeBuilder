@@ -10,6 +10,7 @@ Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{modname}
 Source0:	http://www.cpan.org/modules/by-module/XML/XML-TreeBuilder-%{version}.tar.gz
 
+BuildRequires:	make
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl(Test)
 BuildRequires:	perl-devel
